@@ -1,6 +1,6 @@
 
-import { HeaderUp,HeaderHalf} from './Components/Header';
-HeaderHalf
+import { HeaderUp,HeaderHalf, Headerdown} from './Components/Header';
+
 import { Footer } from './Components/Footer';
 import { ThemeInit } from "../.flowbite-react/init";
 
@@ -10,6 +10,7 @@ export default function App() {
     <ThemeInit />
       <HeaderUp/>
       <HeaderHalf/>
+      <Headerdown/>
       <Footer/>
     </>
 
