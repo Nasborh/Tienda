@@ -47,66 +47,66 @@ export function Footer() {
           </div>
           <div className="md:col-span-6 lg:col-span-2">
             <h3 className="mb-4 text-lg font-semibold text-white">
-              Quick Links
+              Enlaces rápidos
             </h3>
             <ul className="text-white">
               <li className="mb-2">
                 <a href="#" className="hover:underline">
-                  About Us
+                  Sobre nosotros
                 </a>
               </li>
               <li className="mb-2">
                 <a href="#" className="hover:underline">
-                  Products
+                  Productos
                 </a>
               </li>
               <li className="mb-2">
                 <a href="#" className="hover:underline">
-                  Contact
+                  Contacto
                 </a>
               </li>
             </ul>
           </div>
           <div className="md:col-span-6 lg:col-span-2">
             <h3 className="mb-4 text-lg font-semibold text-white">
-              Categories
+              Categorías
             </h3>
             <ul className="text-white">
               <li className="mb-2">
                 <a href="#" className="hover:underline">
-                  Electronics
+                  Electrónica
                 </a>
               </li>
               <li className="mb-2">
                 <a href="#" className="hover:underline">
-                  Clothing
+                  Ropa
                 </a>
               </li>
               <li className="mb-2">
                 <a href="#" className="hover:underline">
-                  Home & Garden
+                  Hogar y jardín
                 </a>
               </li>
             </ul>
           </div>
           <div className="mb- md:col-span-6 lg:col-span-2">
             <h3 className="mb-4 text-lg font-semibold text-white">
-              Customer Service
+                Servicio al cliente
             </h3>
             <ul className="text-white">
               <li className="mb-2">
                 <a href="#" className="hover:underline">
-                  Help Center
+                  Centro de ayuda
                 </a>
               </li>
               <li className="mb-2">
                 <a href="#" className="hover:underline">
-                  Returns
+                  Devoluciones
                 </a>
               </li>
               <li className="mb-2">
                 <a href="#" className="hover:underline">
-                  Shipping Info
+                  Información de envío
                 </a>
               </li>
             </ul>
@@ -114,14 +114,14 @@ export function Footer() {
           <div className="md:col-span-6 lg:col-span-3">
             <div className="md:max-w-4xl:mb-12">
               <h4 className="relative mb-5 pb-5 text-lg font-semibold text-white">
-                Get Mobile App
+                Obtener aplicación móvil
               </h4>
               <p className="mb-5 pr-4 text-white">
-                Nasborh App is now available on App Store & Google Play.
+                La aplicación Nasborh ahora está disponible en App Store y Google Play.
               </p>
               <div className="text-white">
                 <h5 className="mt-3 mb-5 text-base font-medium">
-                  Download Our Mobile App
+                  Descargue nuestra aplicación móvil
                 </h5>
                 <div className="flex gap-2">
                   <a
@@ -130,7 +130,7 @@ export function Footer() {
                   >
                     <FaGooglePlay className="text-3xl"></FaGooglePlay>
                     <div className="flex flex-col">
-                      <span className="text-xs font-medium">Get It On</span>
+                      <span className="text-xs font-medium">Consíguelo</span>
                       <h6 className="mt-1 text-sm">Google Play</h6>
                     </div>
                   </a>
@@ -140,14 +140,14 @@ export function Footer() {
                   >
                     <FaAppStore className="text-3xl"></FaAppStore>
                     <div className="flex flex-col">
-                      <span className="text-xs font-medium">Get It On</span>
+                      <span className="text-xs font-medium">Consíguelo</span>
                       <h6 className="mt-1 text-sm">App Store</h6>
                     </div>
                   </a>
                 </div>
               </div>
               <div className="mb-5 lg:-mb-5">
-                <span className="mb-2 block text-white">We Accept:</span>
+                <span className="mb-2 block text-white">Nosotros aceptamos:</span>
                 <div className="flex items-center gap-2">
                   <img
                     className="mr-1 w-8 lg:w-12"
@@ -180,121 +180,37 @@ export function Footer() {
           </div>
           <div className="col-span-12">
             <div className="mt-4 mb-1 md:mt-2">
-              <div className="grid gap-2 sm:grid-cols-2 lg:grid-cols-4">
-                <a
-                  className="mb-4 w-full max-w-xs rounded-full border border-solid border-blue-500 bg-gray-900 px-6 py-3 text-center text-lg font-medium text-blue-500 transition-colors duration-300 hover:bg-blue-500 hover:text-white"
-                  href="#"
-                >
-                  Best Sales
-                </a>
-                <a
-                  className="mb-4 w-full max-w-xs rounded-full border border-solid border-blue-500 bg-gray-900 px-6 py-3 text-center text-lg font-medium text-blue-500 transition-colors duration-300 hover:bg-blue-500 hover:text-white"
-                  href="#"
-                >
-                  New Arrivals
-                </a>
-                <a
-                  className="mb-4 w-full max-w-xs rounded-full border border-solid border-blue-500 bg-gray-900 px-6 py-3 text-center text-lg font-medium text-blue-500 transition-colors duration-300 hover:bg-blue-500 hover:text-white"
-                  href="#"
-                >
-                  Accesories
-                </a>
-                <a
-                  className="mb-4 w-full max-w-xs rounded-full border border-solid border-blue-500 bg-gray-900 px-6 py-3 text-center text-lg font-medium text-blue-500 transition-colors duration-300 hover:bg-blue-500 hover:text-white"
-                  href="#"
-                >
-                  Electronics
-                </a>
-                <a
-                  className="mb-4 w-full max-w-xs rounded-full border border-solid border-blue-500 bg-gray-900 px-6 py-3 text-center text-lg font-medium text-blue-500 transition-colors duration-300 hover:bg-blue-500 hover:text-white"
-                  href="#"
-                >
-                  Computers
-                </a>
-                <a
-                  className="mb-4 w-full max-w-xs rounded-full border border-solid border-blue-500 bg-gray-900 px-6 py-3 text-center text-lg font-medium text-blue-500 transition-colors duration-300 hover:bg-blue-500 hover:text-white"
-                  href="#"
-                >
-                  Mobile Phone
-                </a>
-                <a
-                  className="mb-4 w-full max-w-xs rounded-full border border-solid border-blue-500 bg-gray-900 px-6 py-3 text-center text-lg font-medium text-blue-500 transition-colors duration-300 hover:bg-blue-500 hover:text-white"
-                  href="#"
-                >
-                  Headphone
-                </a>
-                <a
-                  className="mb-4 w-full max-w-xs rounded-full border border-solid border-blue-500 bg-gray-900 px-6 py-3 text-center text-lg font-medium text-blue-500 transition-colors duration-300 hover:bg-blue-500 hover:text-white"
-                  href="#"
-                >
-                  TV & Monitor
-                </a>
-                <a
-                  className="mb-4 w-full max-w-xs rounded-full border border-solid border-blue-500 bg-gray-900 px-6 py-3 text-center text-lg font-medium text-blue-500 transition-colors duration-300 hover:bg-blue-500 hover:text-white"
-                  href="#"
-                >
-                  Drone
-                </a>
-                <a
-                  className="mb-4 w-full max-w-xs rounded-full border border-solid border-blue-500 bg-gray-900 px-6 py-3 text-center text-lg font-medium text-blue-500 transition-colors duration-300 hover:bg-blue-500 hover:text-white"
-                  href="#"
-                >
-                  Printer
-                </a>
-                <a
-                  className="mb-4 w-full max-w-xs rounded-full border border-solid border-blue-500 bg-gray-900 px-6 py-3 text-center text-lg font-medium text-blue-500 transition-colors duration-300 hover:bg-blue-500 hover:text-white"
-                  href="#"
-                >
-                  Smart Watch
-                </a>
-                <a
-                  className="mb-4 w-full max-w-xs rounded-full border border-solid border-blue-500 bg-gray-900 px-6 py-3 text-center text-lg font-medium text-blue-500 transition-colors duration-300 hover:bg-blue-500 hover:text-white"
-                  href="#"
-                >
-                  Earbuds
-                </a>
-                <a
-                  className="mb-4 w-full max-w-xs rounded-full border border-solid border-blue-500 bg-gray-900 px-6 py-3 text-center text-lg font-medium text-blue-500 transition-colors duration-300 hover:bg-blue-500 hover:text-white"
-                  href="#"
-                >
-                  Camera
-                </a>
-                <a
-                  className="mb-4 w-full max-w-xs rounded-full border border-solid border-blue-500 bg-gray-900 px-6 py-3 text-center text-lg font-medium text-blue-500 transition-colors duration-300 hover:bg-blue-500 hover:text-white"
-                  href="#"
-                >
-                  Gaming
-                </a>
-                <a
-                  className="mb-4 w-full max-w-xs rounded-full border border-solid border-blue-500 bg-gray-900 px-6 py-3 text-center text-lg font-medium text-blue-500 transition-colors duration-300 hover:bg-blue-500 hover:text-white"
-                  href="#"
-                >
-                  Discount
-                </a>
-                <a
-                  className="mb-4 w-full max-w-xs rounded-full border border-solid border-blue-500 bg-gray-900 px-6 py-3 text-center text-lg font-medium text-blue-500 transition-colors duration-300 hover:bg-blue-500 hover:text-white"
-                  href="#"
-                >
-                  Support
-                </a>
-                <a
-                  className="mb-4 w-full max-w-xs rounded-full border border-solid border-blue-500 bg-gray-900 px-6 py-3 text-center text-lg font-medium text-blue-500 transition-colors duration-300 hover:bg-blue-500 hover:text-white"
-                  href="#"
-                >
-                  Sitemap
-                </a>
-                <a
-                  className="mb-4 w-full max-w-xs rounded-full border border-solid border-blue-500 bg-gray-900 px-6 py-3 text-center text-lg font-medium text-blue-500 transition-colors duration-300 hover:bg-blue-500 hover:text-white"
-                  href="#"
-                >
-                  Our Affiliates
-                </a>
-                <a
-                  className="mb-4 w-full max-w-xs rounded-full border border-solid border-blue-500 bg-gray-900 px-6 py-3 text-center text-lg font-medium text-blue-500 transition-colors duration-300 hover:bg-blue-500 hover:text-white"
-                  href="#"
-                >
-                  Returns Policy
-                </a>
+              <div className="flex flex-wrap gap-3 justify-center">
+                {[
+                  "Best Sales",
+                  "New Arrivals",
+                  "Accessories",
+                  "Electronics",
+                  "Computers",
+                  "Mobile Phone",
+                  "Headphone",
+                  "TV & Monitor",
+                  "Drone",
+                  "Printer",
+                  "Smart Watch",
+                  "Earbuds",
+                  "Camera",
+                  "Gaming",
+                  "Discount",
+                  "Payment",
+                  "Support",
+                  "Sitemap",
+                  "Our Affiliates",
+                  "Returns Policy",
+                ].map((item) => (
+                  <a
+                    key={item}
+                    href="#"
+                    className="rounded-full border border-blue-500 px-4 py-1 text-sm font-medium text-blue-500 transition-colors duration-300 hover:bg-blue-500 hover:text-white"
+                  >
+                    {item}
+                  </a>
+                ))}
               </div>
             </div>
           </div>
@@ -307,14 +223,14 @@ export function Footer() {
             {/* Información de Copyright */}
             <div className="text-center text-sm text-white md:text-left">
               <p>
-                © {new Date().getFullYear()} Copyright{" "}
+                © {new Date().getFullYear()} Derechos de autor{" "}
                 <a
                   href="https://flowbite.com/"
                   className="font-medium text-blue-500 hover:underline"
                 >
                   Nasborh™
                 </a>
-                . All Rights Reserved.
+                . Reservados todos los derechos.
               </p>
             </div>
 
