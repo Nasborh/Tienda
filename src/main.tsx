@@ -1,5 +1,4 @@
 import { initThemeMode } from "flowbite-react";
-import "flowbite";
 import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
 import { ThemeInit } from "../.flowbite-react/init";

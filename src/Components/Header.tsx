@@ -1,4 +1,15 @@
-import { Navbar, NavbarBrand, NavbarCollapse, NavbarLink, NavbarToggle, Button, MegaMenu, MegaMenuDropdown, Dropdown, Card, TextInput, DropdownItem } from "flowbite-react";
+import {
+  Navbar,
+  NavbarBrand,
+  NavbarCollapse,
+  NavbarLink,
+  NavbarToggle,
+  Button,
+  MegaMenu,
+  MegaMenuDropdown,
+  Dropdown,
+  DropdownItem,
+} from "flowbite-react";
 import { FiMessageSquare } from "react-icons/fi";
 import { MdOutlinePhone } from "react-icons/md";
 import { IoLogoFacebook } from "react-icons/io5";
@@ -11,59 +22,73 @@ import { PiDesktopTowerLight } from "react-icons/pi";
 import { GiSmartphone } from "react-icons/gi";
 import { HiOutlineTv } from "react-icons/hi2";
 import { BsCart3 } from "react-icons/bs";
+import { NavLink, Link } from "react-router-dom";
 
 import Logo from "../assets/logowhite.png";
 
 export function HeaderUp() {
   return (
-    <Navbar className="bg-gray-100 border-gray-300 ">
+    <Navbar className="border-gray-300 bg-gray-100">
       <NavbarBrand href="#" className="mx-10">
-        <FiMessageSquare className="text-blue-400 text-xl mx-2" />
-        <span className="self-center whitespace-nowrap text-gray-800 font-semibold me-1">info@example.com</span>
-        <MdOutlinePhone className="text-blue-400 text-xl mx-2" />
-        <span className="self-center whitespace-nowrap text-gray-800 font-semibold">+582121234567</span>
+        <FiMessageSquare className="mx-2 text-xl text-blue-400" />
+        <span className="me-1 self-center font-semibold whitespace-nowrap text-gray-800">
+          info@example.com
+        </span>
+        <MdOutlinePhone className="mx-2 text-xl text-blue-400" />
+        <span className="self-center font-semibold whitespace-nowrap text-gray-800">
+          +582121234567
+        </span>
       </NavbarBrand>
 
       <NavbarBrand href="#" className="mx-10">
-        <span className="text-sm text-gray-800 font-semibold mx-2">Siguenos:</span>
-        <IoLogoFacebook className="text-blue-400 text-xl mx-1" />
-        <FaXTwitter className="text-blue-400 text-xl mx-1" />
-        <AiOutlineInstagram className="text-blue-400 text-xl mx-1" />
+        <span className="mx-2 text-sm font-semibold text-gray-800">
+          Siguenos:
+        </span>
+        <IoLogoFacebook className="mx-1 text-xl text-blue-400" />
+        <FaXTwitter className="mx-1 text-xl text-blue-400" />
+        <AiOutlineInstagram className="mx-1 text-xl text-blue-400" />
       </NavbarBrand>
-
     </Navbar>
   );
-
 }
-
 
 export function HeaderHalf() {
   return (
     <MegaMenu className="mx-12">
-      <NavbarBrand href="/" className=" mx-8">
-        <img alt="" src={Logo} className="mr-3 h-9 sm:h-10" />
+      <NavbarBrand href="/" className="mx-8">
+        <Link to="/">
+          <img alt="" src={Logo} className="mr-3 h-9 sm:h-10" />
+        </Link>
       </NavbarBrand>
       <div className="order-2 items-center md:flex">
-        <div className="grid grid-cols-2" >
+        <div className="grid grid-cols-2">
           <div className="grid grid-cols-2 gap-2">
-            <div className="bg-blue-100 m-4 rounded-lg p-2 flex justify-center items-center">
-              <FaRegUserCircle className="text-blue-400 text-xl" />
+            <div className="m-4 flex items-center justify-center rounded-lg bg-blue-100 p-2">
+              <FaRegUserCircle className="text-xl text-blue-400" />
             </div>
-            <div className="text-sm font-medium text-gray-500 w-14 my-2">Iniciar Sesión</div>
+            <div className="my-2 w-14 text-sm font-medium text-gray-500">
+              Iniciar Sesión
+            </div>
           </div>
 
           <div className="grid grid-cols-2 gap-2">
-            <div className="bg-blue-100 m-4 rounded-lg p-2 flex justify-center items-center">
-              <IoCartOutline className="text-blue-400 text-xl" />
+            <div className="m-4 flex items-center justify-center rounded-lg bg-blue-100 p-2">
+              <IoCartOutline className="text-xl text-blue-400" />
             </div>
-            <div className="text-sm font-medium text-gray-500 w-14 my-2">Mi carrito</div>
+            <div className="my-2 w-14 text-sm font-medium text-gray-500">
+              Mi carrito
+            </div>
           </div>
         </div>
       </div>
       <NavbarToggle />
       <NavbarCollapse>
-        <div className="flex w-96 max-w-lg items-center bg-gray-50 border rounded-lg hover:border-blue-300 border-gray-100">
-          <Dropdown label="Todas las categorias" className="text-gray-400 border-0 bg-gray-50 hover:text-gray-400 hover:bg-gray-50 focus:outline-none focus:ring-0" color="alternative">
+        <div className="flex w-96 max-w-lg items-center rounded-lg border border-gray-100 bg-gray-50 hover:border-blue-300">
+          <Dropdown
+            label="Todas las categorias"
+            className="border-0 bg-gray-50 text-gray-400 hover:bg-gray-50 hover:text-gray-400 focus:ring-0 focus:outline-none"
+            color="alternative"
+          >
             <DropdownItem>Electronica</DropdownItem>
             <DropdownItem>Musica</DropdownItem>
             <DropdownItem>VideoJuegos</DropdownItem>
@@ -71,13 +96,13 @@ export function HeaderHalf() {
           </Dropdown>
           <input
             type="search"
-            className="block w-full p-2.5 text-md text-gray-500 bg-gray-50 focus:outline-none focus:ring-0 border-l border-gray-100"
+            className="text-md block w-full border-l border-gray-100 bg-gray-50 p-2.5 text-gray-500 focus:ring-0 focus:outline-none"
             placeholder="Buscar productos..."
           />
           <Button
             type="submit"
             color="alternative"
-            className="border-0 bg-gray-50  hover:bg-gray-50 focus:outline-none focus:ring-0"
+            className="border-0 bg-gray-50 hover:bg-gray-50 focus:ring-0 focus:outline-none"
           >
             <svg
               className="h-5 w-5 text-gray-400"
@@ -95,19 +120,14 @@ export function HeaderHalf() {
         </div>
       </NavbarCollapse>
     </MegaMenu>
-
-
   );
-
 }
 
-
-
-export function Headerdown() {
+export function HeaderDown() {
   return (
     <MegaMenu className="bg-blue-500">
       <NavbarBrand className="mx-12">
-        <Dropdown label="Categorías" className=" text-gray-800" color="light">
+        <Dropdown label="Categorías" className="text-gray-800" color="light">
           <DropdownItem icon={CiHeadphones}>Accesorios</DropdownItem>
           <DropdownItem icon={PiDesktopTowerLight}>Computadoras</DropdownItem>
           <DropdownItem icon={GiSmartphone}>Telefono</DropdownItem>
@@ -117,23 +137,29 @@ export function Headerdown() {
 
       <div className="order-2 hidden items-center md:flex">
         <div className="grid grid-cols-2">
-            <div className="flex justify-center items-center">
-              <BsCart3 className="text-white text-xl" />
-            </div>
-            <div className="text-sm font-medium text-white w-full my-3">Mi carrito</div>
+          <div className="flex items-center justify-center">
+            <BsCart3 className="text-xl text-white" />
           </div>
-        
+          <div className="my-3 w-full text-sm font-medium text-white">
+            Mi carrito
+          </div>
+        </div>
       </div>
       <NavbarToggle />
       <NavbarCollapse>
-        <NavbarLink className="text-white" href="#">Inicio</NavbarLink>
+        <Link to="/" className="text-white">
+          Inicio
+        </Link>
         <MegaMenuDropdown toggle={<>Páginas</>}>
           <ul className="grid grid-cols-3">
             <div className="space-y-4 p-4">
               <li>
-                <a href="#" className="group flex items-center hover:text-primary-600 dark:hover:text-primary-500">
+                <a
+                  href="#"
+                  className="group hover:text-primary-600 dark:hover:text-primary-500 flex items-center"
+                >
                   <svg
-                    className="me-2 h-3 w-3 text-gray-400 group-hover:text-primary-600 dark:text-gray-500 dark:group-hover:text-primary-500"
+                    className="group-hover:text-primary-600 dark:group-hover:text-primary-500 me-2 h-3 w-3 text-gray-400 dark:text-gray-500"
                     aria-hidden="true"
                     xmlns="http://www.w3.org/2000/svg"
                     fill="currentColor"
@@ -145,9 +171,12 @@ export function Headerdown() {
                 </a>
               </li>
               <li>
-                <a href="#" className="group flex items-center hover:text-primary-600 dark:hover:text-primary-500">
+                <a
+                  href="#"
+                  className="group hover:text-primary-600 dark:hover:text-primary-500 flex items-center"
+                >
                   <svg
-                    className="me-2 h-3 w-3 text-gray-400 group-hover:text-primary-600 dark:text-gray-500 dark:group-hover:text-primary-500"
+                    className="group-hover:text-primary-600 dark:group-hover:text-primary-500 me-2 h-3 w-3 text-gray-400 dark:text-gray-500"
                     aria-hidden="true"
                     xmlns="http://www.w3.org/2000/svg"
                     fill="currentColor"
@@ -161,9 +190,12 @@ export function Headerdown() {
                 </a>
               </li>
               <li>
-                <a href="#" className="group flex items-center hover:text-primary-600 dark:hover:text-primary-500">
+                <a
+                  href="#"
+                  className="group hover:text-primary-600 dark:hover:text-primary-500 flex items-center"
+                >
                   <svg
-                    className="me-2 h-3 w-3 text-gray-400 group-hover:text-primary-600 dark:text-gray-500 dark:group-hover:text-primary-500"
+                    className="group-hover:text-primary-600 dark:group-hover:text-primary-500 me-2 h-3 w-3 text-gray-400 dark:text-gray-500"
                     aria-hidden="true"
                     xmlns="http://www.w3.org/2000/svg"
                     fill="currentColor"
@@ -176,9 +208,12 @@ export function Headerdown() {
                 </a>
               </li>
               <li>
-                <a href="#" className="group flex items-center hover:text-primary-600 dark:hover:text-primary-500">
+                <a
+                  href="#"
+                  className="group hover:text-primary-600 dark:hover:text-primary-500 flex items-center"
+                >
                   <svg
-                    className="me-2 h-3 w-3 text-gray-400 group-hover:text-primary-600 dark:text-gray-500 dark:group-hover:text-primary-500"
+                    className="group-hover:text-primary-600 dark:group-hover:text-primary-500 me-2 h-3 w-3 text-gray-400 dark:text-gray-500"
                     aria-hidden="true"
                     xmlns="http://www.w3.org/2000/svg"
                     fill="currentColor"
@@ -192,9 +227,12 @@ export function Headerdown() {
             </div>
             <div className="space-y-4 p-4">
               <li>
-                <a href="#" className="group flex items-center hover:text-primary-600 dark:hover:text-primary-500">
+                <a
+                  href="#"
+                  className="group hover:text-primary-600 dark:hover:text-primary-500 flex items-center"
+                >
                   <svg
-                    className="me-2 h-3 w-3 text-gray-400 group-hover:text-primary-600 dark:text-gray-500 dark:group-hover:text-primary-500"
+                    className="group-hover:text-primary-600 dark:group-hover:text-primary-500 me-2 h-3 w-3 text-gray-400 dark:text-gray-500"
                     aria-hidden="true"
                     xmlns="http://www.w3.org/2000/svg"
                     fill="currentColor"
@@ -207,9 +245,12 @@ export function Headerdown() {
                 </a>
               </li>
               <li>
-                <a href="#" className="group flex items-center hover:text-primary-600 dark:hover:text-primary-500">
+                <a
+                  href="#"
+                  className="group hover:text-primary-600 dark:hover:text-primary-500 flex items-center"
+                >
                   <svg
-                    className="me-2 h-3 w-3 text-gray-400 group-hover:text-primary-600 dark:text-gray-500 dark:group-hover:text-primary-500"
+                    className="group-hover:text-primary-600 dark:group-hover:text-primary-500 me-2 h-3 w-3 text-gray-400 dark:text-gray-500"
                     aria-hidden="true"
                     xmlns="http://www.w3.org/2000/svg"
                     fill="currentColor"
@@ -221,9 +262,12 @@ export function Headerdown() {
                 </a>
               </li>
               <li>
-                <a href="#" className="group flex items-center hover:text-primary-600 dark:hover:text-primary-500">
+                <a
+                  href="#"
+                  className="group hover:text-primary-600 dark:hover:text-primary-500 flex items-center"
+                >
                   <svg
-                    className="me-2 h-3 w-3 text-gray-400 group-hover:text-primary-600 dark:text-gray-500 dark:group-hover:text-primary-500"
+                    className="group-hover:text-primary-600 dark:group-hover:text-primary-500 me-2 h-3 w-3 text-gray-400 dark:text-gray-500"
                     aria-hidden="true"
                     xmlns="http://www.w3.org/2000/svg"
                     fill="currentColor"
@@ -235,9 +279,12 @@ export function Headerdown() {
                 </a>
               </li>
               <li>
-                <a href="#" className="group flex items-center hover:text-primary-600 dark:hover:text-primary-500">
+                <a
+                  href="#"
+                  className="group hover:text-primary-600 dark:hover:text-primary-500 flex items-center"
+                >
                   <svg
-                    className="me-2 h-3 w-3 text-gray-400 group-hover:text-primary-600 dark:text-gray-500 dark:group-hover:text-primary-500"
+                    className="group-hover:text-primary-600 dark:group-hover:text-primary-500 me-2 h-3 w-3 text-gray-400 dark:text-gray-500"
                     aria-hidden="true"
                     xmlns="http://www.w3.org/2000/svg"
                     fill="currentColor"
@@ -251,9 +298,12 @@ export function Headerdown() {
             </div>
             <div className="space-y-4 p-4">
               <li>
-                <a href="#" className="group flex items-center hover:text-primary-600 dark:hover:text-primary-500">
+                <a
+                  href="#"
+                  className="group hover:text-primary-600 dark:hover:text-primary-500 flex items-center"
+                >
                   <svg
-                    className="me-2 h-3 w-3 text-gray-400 group-hover:text-primary-600 dark:text-gray-500 dark:group-hover:text-primary-500"
+                    className="group-hover:text-primary-600 dark:group-hover:text-primary-500 me-2 h-3 w-3 text-gray-400 dark:text-gray-500"
                     aria-hidden="true"
                     xmlns="http://www.w3.org/2000/svg"
                     fill="currentColor"
@@ -265,9 +315,12 @@ export function Headerdown() {
                 </a>
               </li>
               <li>
-                <a href="#" className="group flex items-center hover:text-primary-600 dark:hover:text-primary-500">
+                <a
+                  href="#"
+                  className="group hover:text-primary-600 dark:hover:text-primary-500 flex items-center"
+                >
                   <svg
-                    className="me-2 h-3 w-3 text-gray-400 group-hover:text-primary-600 dark:text-gray-500 dark:group-hover:text-primary-500"
+                    className="group-hover:text-primary-600 dark:group-hover:text-primary-500 me-2 h-3 w-3 text-gray-400 dark:text-gray-500"
                     aria-hidden="true"
                     xmlns="http://www.w3.org/2000/svg"
                     fill="currentColor"
@@ -279,9 +332,12 @@ export function Headerdown() {
                 </a>
               </li>
               <li>
-                <a href="#" className="group flex items-center hover:text-primary-600 dark:hover:text-primary-500">
+                <a
+                  href="#"
+                  className="group hover:text-primary-600 dark:hover:text-primary-500 flex items-center"
+                >
                   <svg
-                    className="me-2 h-3 w-3 text-gray-400 group-hover:text-primary-600 dark:text-gray-500 dark:group-hover:text-primary-500"
+                    className="group-hover:text-primary-600 dark:group-hover:text-primary-500 me-2 h-3 w-3 text-gray-400 dark:text-gray-500"
                     aria-hidden="true"
                     xmlns="http://www.w3.org/2000/svg"
                     fill="currentColor"
@@ -295,8 +351,12 @@ export function Headerdown() {
             </div>
           </ul>
         </MegaMenuDropdown>
-        <NavbarLink href="#" className="text-white">Nosotros</NavbarLink>
-        <NavbarLink href="#" className="text-white">Ayuda</NavbarLink>
+        <Link to="/Nosotros" className="text-white">
+          Nosotros
+        </Link>
+        <Link to="/Ayuda" className="text-white">
+          Ayuda
+        </Link>
       </NavbarCollapse>
     </MegaMenu>
   );
