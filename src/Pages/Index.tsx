@@ -1,51 +1,43 @@
+import { BannerCard } from "../Components/Banner";
+import { HeroCarousel } from "../Components/HeroCarousel";
+import { Carousel } from "flowbite-react";
+
 export function Index() {
   return (
     <section className="section_hero">
-      <div className="relative flex items-center rounded-2xl bg-blue-50 p-8 lg:col-span-2">
-        <div className="relative flex items-center rounded-2xl bg-blue-50 p-8 lg:col-span-2">
-          {/* Texto */}
-          <div className="flex flex-col">
-            <h6 className="text-lg font-semibold text-blue-600">
-              Up To 50% Off
-            </h6>
-            <h1 className="text-4xl leading-snug font-bold">
-              For Your First <br />
-              <span className="text-blue-500">Electo</span> Shopping
-            </h1>
-            <p className="text-gray-600">
-              There are many variations of passages of Lorem Ipsum available but
+      <div className="container mx-auto grid grid-cols-1 gap-6 py-8 lg:grid-cols-3">
+        {/* Hero Principal */}
+        <Carousel className="relative flex items-center rounded-2xl bg-blue-50 p-8 lg:col-span-2">
+          <HeroCarousel
+            discountText="Electo"
+            title="For Your First"
+            highlightedWord="Electo"
+            description="There are many variations of passages of Lorem Ipsum available but
               the majority have suffered alteration in some form by injected
-              humour.
-            </p>
-            <a
-              href="#"
-              className="inline-flex items-center rounded-lg bg-blue-600 px-5 py-3 text-white shadow transition hover:bg-blue-700"
-            >
-              Shop Now
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                className="ml-2 h-4 w-4"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={2}
-                  d="M9 5l7 7-7 7"
-                />
-              </svg>
-            </a>
-          </div>
-          {/* Imágen */}
-          <img
-            src="/src/assets/img/hero-1.png"
-            alt="Hero"
-            className="absolute right-8 bottom-0 max-h-72 object-contain"
-          />
+              humour."
+            buttonText="Shop Now"
+            imageUrl="/src/assets/hero-1.png"
+            imageAlt="Hero"
+          ></HeroCarousel>
+        </Carousel>
+
+        {/* Banners Laterales */}
+        <div className="flex flex-col gap-6">
+          <BannerCard
+            image="/src/assets/mini-banner-1.jpg"
+            alt="Speaker"
+            text="Hot Sale"
+            description="Best Speaker Sale Collections"
+            descriptionLink=" Discover Now"
+          ></BannerCard>
+          <BannerCard
+            image="/src/assets/mini-banner-2.jpg"
+            alt="Watch"
+            text="Apple Watch"
+            description="Apple Smart Watch Collections"
+            descriptionLink="Shop Now"
+          ></BannerCard>
         </div>
-        <div></div>
       </div>
     </section>
   );
